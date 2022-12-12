@@ -1,9 +1,9 @@
 import React from 'react'
 
-export default function TodoItem() {
+export default function TodoItem(props) {
   return (
     <div>
-    <input type="text" value="This is the item"></input>
+    <input type="text" value={props.todo}></input>
     <br/><br/>
     </div>
   )
