@@ -1,11 +1,10 @@
 import './App.css';
-import TodoItem from './features/TodoItem';
+import TodoList from './features/TodoList';
 
 function App() {
   return (
     <div className="App">
-      <h1>Todo App</h1>
-      <TodoItem />
+      <TodoList />
     </div>
   );
 }
