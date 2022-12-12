@@ -1,11 +1,11 @@
 import React,{useState} from 'react'
 
-export default function ToDoItem() {
-    const [content, setContent] = useState("Hi");
+export default function ToDoItem(props) {
+    
     return (
     <div style={{border: '2px solid black'}}>
         <h5>
-            {content}
+            {props.content}
         </h5>
     </div>
   )
