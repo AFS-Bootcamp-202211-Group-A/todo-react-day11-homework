@@ -1,9 +1,9 @@
 import React from 'react'
 
-function List() {
+function List(props) {
   return (
-    <div>
-        <p className='List'>Message 1</p>
+    <div className='ListBorder'>
+        <p className='List'>{props.message}</p>
     </div>
   )
 }

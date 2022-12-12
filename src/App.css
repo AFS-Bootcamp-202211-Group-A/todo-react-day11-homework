@@ -38,5 +38,10 @@
 }
 
 .List {
-  border: 1px solid black;
+  border: 1px solid black; 
+  width: 50%;
+  margin: auto;
+}
+.ListBorder {
+  margin: 10px;
 }

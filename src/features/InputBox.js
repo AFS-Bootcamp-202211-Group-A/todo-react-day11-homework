@@ -1,12 +1,13 @@
 import React, { useState } from 'react'
 
-function InputBox() {
+function InputBox(props) {
+  const {updateMessageList} = props;
   const [message, setMessage] = useState('');
   const handleMessage = (event) => {
     setMessage(event.target.value);
   }
   const addItem = () => {
-    console.log(message);
+    updateMessageList(message);
   }
 
   return (

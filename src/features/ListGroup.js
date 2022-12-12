@@ -1,12 +1,11 @@
-import React from 'react'
-import List from './List'
+import React, { useState } from "react";
+import List from "./List";
 
-function ListGroup() {
-  return (
-    <div>
-        <List/>
-    </div>
-  )
+function ListGroup(props) {
+  console.log(props);
+  return props.messageMap.map((item, index) => {
+    return <List key={index} message={item} />;
+  });
 }
 
-export default ListGroup
+export default ListGroup;
