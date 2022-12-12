@@ -1,11 +1,11 @@
 import './App.css';
-import InputBox from './features/InputBox';
+import ListArea from './features/ListArea';
 
 function App() {
   return (
     <div className="App">
       <h1>Todo App</h1>
-      <InputBox/>
+      <ListArea/>
     </div>
   );
 }
