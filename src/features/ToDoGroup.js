@@ -1,7 +1,7 @@
 import React from "react";
-import ToDoItem from "./ToDoItem";
+import ToDoItem from "./TodoItem";
 
-export default function ToDoGroup(props) {
+export default function TodoGroup(props) {
   const { toDoItems } = props;
   return (
     <div>
