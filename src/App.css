@@ -36,3 +36,17 @@
     transform: rotate(360deg);
   }
 }
+
+#inputBox {
+  margin: 10px;
+}
+
+#inputText {
+  width: 50%;
+}
+
+#addButton{
+  margin: 10px;
+  background: lightskyblue;
+}
+
