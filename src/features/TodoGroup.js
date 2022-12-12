@@ -1,12 +1,11 @@
 import React from 'react'
 import TodoItem from './TodoItem';
 
-export default function TodoGroup() {
-  const itemContentArray = ["test", "more test", "a", "b"];
+export default function TodoGroup(props) {
 
   return (
-    itemContentArray.map((item, index) =>{
-      return <TodoItem title={item}/>;
+    props.itemContentArray.map((item, index) =>{
+      return <TodoItem key={index} title={item}/>;
     })
   );
 }

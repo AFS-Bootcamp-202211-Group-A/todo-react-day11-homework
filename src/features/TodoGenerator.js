@@ -1,11 +1,12 @@
 import React, { useState } from "react";
 
-export default function TodoGenerator() {
+export default function TodoGenerator(props) {
 
   const [input, setinput] = useState("");
 
   const addItem = (e) => {
-      console.log(input);
+    props.setArray([...props.itemContentArray, input]);
+    setinput("");
   }  
   
   const onChange = (e) => {
