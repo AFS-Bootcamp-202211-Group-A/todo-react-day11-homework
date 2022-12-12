@@ -1,15 +1,15 @@
 import React,{useState} from 'react'
 
-export default function ToDoGenerator() {
+export default function ToDoGenerator(props) {
     const [content, setContent] = useState("");
-    
+    const {addContent} = props;
     const onContentChange = (event) =>{
         const inputValue = event.target.value;
         setContent(inputValue);
     }
 
     const onSubmit = ()=>{
-        console.log(content);
+        addContent(content);
         setContent("");
     }
   return (
