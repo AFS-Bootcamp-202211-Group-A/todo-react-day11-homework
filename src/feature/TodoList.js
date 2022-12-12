@@ -10,7 +10,7 @@ export default function TodoList() {
   return (
     <div>
       <h1>Todo List</h1>
-      <TodoGroup message={messages} />
+      <TodoGroup messages={messages} />
       <TodoGenerator updateMessages={updateMessages} />
     </div>
   );
