@@ -36,3 +36,8 @@
     transform: rotate(360deg);
   }
 }
+
+#blueButton{
+  background-color: rgb(90, 149, 231);
+  color: white;
+}
