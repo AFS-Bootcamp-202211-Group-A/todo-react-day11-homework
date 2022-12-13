@@ -1,9 +1,12 @@
 import './App.css';
+import React,{useState} from 'react'
+import ToDoList from './feature/ToDoList';
 
 function App() {
+
   return (
     <div className="App">
-      <h1>Todo App</h1>
+      <ToDoList/>
     </div>
   );
 }
