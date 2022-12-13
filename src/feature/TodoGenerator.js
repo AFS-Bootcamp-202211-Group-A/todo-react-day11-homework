@@ -6,6 +6,7 @@ export default function TodoGenerator(props) {
     const inputValue = inputRef.current.value;
     if (inputValue.length !== 0) {
       props.updateMessages(inputValue);
+      inputRef.current.value = "";
     }
   };
   return (
